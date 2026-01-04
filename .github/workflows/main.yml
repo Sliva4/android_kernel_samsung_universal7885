@@ -37,7 +37,10 @@ jobs:
           echo "libmpfr.so.6 not found, aborting."
           exit 1
         fi
-
+    - name: Get toolchain
+      run: |
+        git clone https://github.com/mvaisakh/gcc-arm64/
+       
     - name: Make kernel
       run: |
         ./build_kernel.sh

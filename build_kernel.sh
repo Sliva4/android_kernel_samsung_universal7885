@@ -5,7 +5,7 @@ export KBUILD_BUILD_USER="localhost"
 export KBUILD_BUILD_HOST="localhost"
 export PLATFORM_VERSION=11
 export ANDROID_MAJOR_VERSION=r
-export CROSS_COMPILE=prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+export CROSS_COMPILE=gcc-arm64/bin/aarch64-elf-
 export ARCH=arm64
 
 make clean
