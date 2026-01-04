@@ -19,7 +19,7 @@ jobs:
         sudo DEBIAN_FRONTEND=noninteractive apt install -y \
           build-essential bc zip curl git \
           libncurses5-dev flex bison \
-          python-is-python3 ca-certificates unzip ccache
+          python-is-python3 ca-certificates unzip ccache libdebuginfod1
 
     - name: Checkout repo
       uses: actions/checkout@v3.5.3
@@ -37,6 +37,7 @@ jobs:
           echo "libmpfr.so.6 not found, aborting."
           exit 1
         fi
+
     - name: Get toolchain
       run: |
         git clone https://github.com/mvaisakh/gcc-arm64/
