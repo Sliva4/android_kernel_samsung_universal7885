@@ -1,0 +1,6 @@
+toolchain/*
+out/*
+out2/*
+kernel_zip/*
+patches/*
+*.log
